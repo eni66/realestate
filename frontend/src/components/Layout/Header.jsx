@@ -155,7 +155,7 @@ const Header = ({ activeHeading }) => {
               </div>
             </div>
 
-            <div className={`${styles.noramlFlex}`}>
+            {/* <div className={`${styles.noramlFlex}`}>
               <div
                 className="relative cursor-pointer mr-[15px]"
                 onClick={() => setOpenCart(true)}
@@ -168,7 +168,7 @@ const Header = ({ activeHeading }) => {
                   {cart && cart.length}
                 </span>
               </div>
-            </div>
+            </div> */}
 
             <div className={`${styles.noramlFlex}`}>
               <div className="relative cursor-pointer mr-[15px]">
@@ -189,7 +189,7 @@ const Header = ({ activeHeading }) => {
             </div>
 
             {/* cart popup */}
-            {openCart ? <Cart setOpenCart={setOpenCart} /> : null}
+            {/* {openCart ? <Cart setOpenCart={setOpenCart} /> : null} */}
 
             {/* wishlist popup */}
             {openWishlist ? (
@@ -223,7 +223,7 @@ const Header = ({ activeHeading }) => {
               />
             </Link>
           </div>
-          <div>
+          {/* <div>
             <div
               className="relative mr-[20px]"
               onClick={() => setOpenCart(true)}
@@ -235,7 +235,7 @@ const Header = ({ activeHeading }) => {
             </div>
           </div>
           {/* cart popup */}
-          {openCart ? <Cart setOpenCart={setOpenCart} /> : null}
+          {openCart ? <Cart setOpenCart={setOpenCart} /> : null} */}
 
           {/* wishlist popup */}
           {openWishlist ? <Wishlist setOpenWishlist={setOpenWishlist} /> : null}
