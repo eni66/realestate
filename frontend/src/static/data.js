@@ -194,7 +194,7 @@ export const navItems = [
       title: "For Rent",
       subTitle: "",
       image_Url:
-        "https://img.freepik.com/free-photo/hands-holding-word-rent_53876-30907.jpg?t=st=1745835236~exp=1745838836~hmac=ed312c0f5793a3816cf602b01ca20726a8486f9aaf539761537ae3fb6b88ea93&w=1380",
+        "https://img.freepik.com/premium-vector/rental-apartment-white-background_168425-78.jpg?w=740",
     },
     {
       id: 2,
