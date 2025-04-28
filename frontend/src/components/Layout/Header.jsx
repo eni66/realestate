@@ -223,7 +223,7 @@ const Header = ({ activeHeading }) => {
               />
             </Link>
           </div>
-          {{/* <div>
+          <div>
             <div
               className="relative mr-[20px]"
               onClick={() => setOpenCart(true)}
@@ -233,9 +233,9 @@ const Header = ({ activeHeading }) => {
                 {cart && cart.length}
               </span>
             </div>
-          </div> */}
+          </div>
           {/* cart popup */}
-          {/* {openCart ? <Cart setOpenCart={setOpenCart} /> : null}  */}
+          {openCart ? <Cart setOpenCart={setOpenCart} /> : null} 
 
           {/* wishlist popup */}
           {openWishlist ? <Wishlist setOpenWishlist={setOpenWishlist} /> : null}
