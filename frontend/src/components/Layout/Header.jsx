@@ -226,16 +226,16 @@ const Header = ({ activeHeading }) => {
           <div>
             <div
               className="relative mr-[20px]"
-              onClick={() => setOpenCart(true)}
+              onClick={() => setOpenWishlist(true)}
             >
-              <AiOutlineShoppingCart size={30} />
+              <AiOutlineHeart size={30} />
               <span class="absolute right-0 top-0 rounded-full bg-[#3bc177] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px]  leading-tight text-center">
-                {cart && cart.length}
+              {wishlist && wishlist.length}
               </span>
             </div>
           </div>
           {/* cart popup */}
-          {openCart ? <Cart setOpenCart={setOpenCart} /> : null} 
+          {/* {openCart ? <Cart setOpenCart={setOpenCart} /> : null}  */}
 
           {/* wishlist popup */}
           {openWishlist ? <Wishlist setOpenWishlist={setOpenWishlist} /> : null}
