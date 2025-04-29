@@ -21,7 +21,7 @@ const EventsPage = () => {
          }
          <h4>{
            allEvents?.length === 0 && (
-            // 'No Events have!'
+            ''
            )
           }
 
