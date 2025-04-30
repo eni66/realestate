@@ -14,11 +14,11 @@ export const navItems = [
     },
     {
       title: "Promotions",
-      url: "/events",
+      url: "/promotions",
     },
     {
-      title: "FAQ",
-      url: "/faq",
+      title: "Contact Us",
+      url: "/contact-us",
     },
   ];
   
