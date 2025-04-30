@@ -10,7 +10,7 @@ export const navItems = [
     // },
     {
       title: "Residents",
-      url: "/products",
+      url: "/residents",
     },
     {
       title: "Promotions",
