@@ -22,7 +22,7 @@ const Hero = () => {
           Rent furnished or unfurnished. <br /> 
           You can enjoy our furniture and decor or bring your own.
         </p>
-        <Link to="/products" className="inline-block">
+        <Link to="/sign-up" className="inline-block">
             <div className={`${styles.button} mt-5`}>
                  <span className="text-[#fff] font-[Poppins] text-[18px]">
                     Signup Now
