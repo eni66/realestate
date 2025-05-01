@@ -15,6 +15,8 @@ const CreateProduct = () => {
   const [images, setImages] = useState([]);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [address, setAddress] = useState("");
+  const [zipCode, setZipCode] = useState("");
   const [category, setCategory] = useState("");
   const [tags, setTags] = useState("");
   const [originalPrice, setOriginalPrice] = useState();
@@ -59,6 +61,8 @@ const CreateProduct = () => {
     });
     newForm.append("name", name);
     newForm.append("description", description);
+    newForm.append("address", address);
+    newForm.append("zipCode", zipCode);
     newForm.append("category", category);
     newForm.append("tags", tags);
     newForm.append("originalPrice", originalPrice);
@@ -69,6 +73,8 @@ const CreateProduct = () => {
       createProduct({
         name,
         description,
+        address,
+        zipCode,
         category,
         tags,
         originalPrice,
@@ -96,7 +102,7 @@ const CreateProduct = () => {
             value={name}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setName(e.target.value)}
-            placeholder="Enter your product name..."
+            placeholder="Enter your residence name..."
           />
         </div>
         <br />
@@ -113,8 +119,36 @@ const CreateProduct = () => {
             value={description}
             className="mt-2 appearance-none block w-full pt-2 px-3 border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Enter your product description..."
+            placeholder="Enter your residence description..."
           ></textarea>
+        </div>
+        <br />
+        <div>
+          <label className="pb-2">
+            Address <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            name="address"
+            value={address}
+            className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            onChange={(e) => setAddress(e.target.value)}
+            placeholder="Enter your residence address..."
+          />
+        </div>
+        <br />
+        <div>
+          <label className="pb-2">
+            Zipcode <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            name="zipCode"
+            value={zipCode}
+            className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            onChange={(e) => setZipCode(e.target.value)}
+            placeholder="Enter your residence zipCode..."
+          />
         </div>
         <br />
         <div>
@@ -136,6 +170,7 @@ const CreateProduct = () => {
           </select>
         </div>
         <br />
+        
         <div>
           <label className="pb-2">Tags</label>
           <input
@@ -144,7 +179,7 @@ const CreateProduct = () => {
             value={tags}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setTags(e.target.value)}
-            placeholder="Enter your product tags..."
+            placeholder="Enter your residence tags..."
           />
         </div>
         <br />
@@ -156,7 +191,7 @@ const CreateProduct = () => {
             value={originalPrice}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setOriginalPrice(e.target.value)}
-            placeholder="Enter your product price..."
+            placeholder="Enter your residence price..."
           />
         </div>
         <br />
@@ -170,7 +205,7 @@ const CreateProduct = () => {
             value={discountPrice}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setDiscountPrice(e.target.value)}
-            placeholder="Enter your product price with discount..."
+            placeholder="Enter your residence price with discount..."
           />
         </div>
         <br />
@@ -184,7 +219,7 @@ const CreateProduct = () => {
             value={stock}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setStock(e.target.value)}
-            placeholder="Enter your product stock..."
+            placeholder="Maximum number of tenants..."
           />
         </div>
         <br />

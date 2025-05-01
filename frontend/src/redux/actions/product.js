@@ -6,6 +6,8 @@ export const createProduct =
   (
     name,
     description,
+    address,
+    zipCode,
     category,
     tags,
     originalPrice,
@@ -24,6 +26,8 @@ export const createProduct =
         `${server}/product/create-product`,
         name,
         description,
+        address,
+        zipCode,
         category,
         tags,
         originalPrice,
