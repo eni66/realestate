@@ -14,8 +14,16 @@ const productSchema = new mongoose.Schema({
     required: [true, "Please enter your product address!"],
   },
   zipCode: {
-    type: Number,
+    type: String,
     required: [true, "Please enter your product zipcode!"],
+  },
+  bed: {
+    type: Number,
+    required: [true, "Please number of beds!"],
+  },
+  bath: {
+    type: Number,
+    required: [true, "Please enter number of baths!"],
   },
   category: {
     type: String,

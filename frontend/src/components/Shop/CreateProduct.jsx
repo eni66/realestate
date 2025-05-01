@@ -16,6 +16,8 @@ const CreateProduct = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [address, setAddress] = useState("");
+  const [bed, setBed] = useState("");
+  const [bath, setBath] = useState("");
   const [zipCode, setZipCode] = useState("");
   const [category, setCategory] = useState("");
   const [tags, setTags] = useState("");
@@ -63,6 +65,8 @@ const CreateProduct = () => {
     newForm.append("description", description);
     newForm.append("address", address);
     newForm.append("zipCode", zipCode);
+    newForm.append("bed", bed);
+    newForm.append("bath", bath);
     newForm.append("category", category);
     newForm.append("tags", tags);
     newForm.append("originalPrice", originalPrice);
@@ -75,6 +79,8 @@ const CreateProduct = () => {
         description,
         address,
         zipCode,
+        bed,
+        bath,
         category,
         tags,
         originalPrice,
@@ -148,6 +154,34 @@ const CreateProduct = () => {
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setZipCode(e.target.value)}
             placeholder="Enter your residence zipCode..."
+          />
+        </div>
+        <br />
+        <div>
+          <label className="pb-2">
+            Beds <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            name="bed"
+            value={bed}
+            className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            onChange={(e) => setBed(e.target.value)}
+            placeholder="Enter number of beds..."
+          />
+        </div>
+        <br />
+        <div>
+          <label className="pb-2">
+            Baths <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            name="bath"
+            value={bath}
+            className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            onChange={(e) => setBath(e.target.value)}
+            placeholder="Enter number of baths..."
           />
         </div>
         <br />
