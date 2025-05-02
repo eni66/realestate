@@ -19,7 +19,7 @@ const EventsPage = () => {
             <EventCard active={true} data={allEvents && allEvents[0]} />
           )
          }
-         <h4>{
+         <h4 className="w-full flex justify-center">{
            allEvents?.length === 0 && (
             'No Promotions!'
            )

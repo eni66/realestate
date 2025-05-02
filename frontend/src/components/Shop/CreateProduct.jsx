@@ -108,7 +108,7 @@ const CreateProduct = () => {
             value={name}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setName(e.target.value)}
-            placeholder="Enter your residence name..."
+            placeholder="Enter your property name..."
           />
         </div>
         <br />
@@ -125,7 +125,7 @@ const CreateProduct = () => {
             value={description}
             className="mt-2 appearance-none block w-full pt-2 px-3 border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Enter your residence description..."
+            placeholder="Enter your property description..."
           ></textarea>
         </div>
         <br />
@@ -139,7 +139,7 @@ const CreateProduct = () => {
             value={address}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setAddress(e.target.value)}
-            placeholder="Enter your residence address..."
+            placeholder="Enter your property address..."
           />
         </div>
         <br />
@@ -153,7 +153,7 @@ const CreateProduct = () => {
             value={zipCode}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setZipCode(e.target.value)}
-            placeholder="Enter your residence zipCode..."
+            placeholder="Enter your property zipCode..."
           />
         </div>
         <br />
@@ -213,7 +213,7 @@ const CreateProduct = () => {
             value={tags}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setTags(e.target.value)}
-            placeholder="Enter your residence tags..."
+            placeholder="Enter your property tags..."
           />
         </div>
         <br />
@@ -225,7 +225,7 @@ const CreateProduct = () => {
             value={originalPrice}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setOriginalPrice(e.target.value)}
-            placeholder="Enter your residence price..."
+            placeholder="Enter your property price..."
           />
         </div>
         <br />
@@ -239,7 +239,7 @@ const CreateProduct = () => {
             value={discountPrice}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setDiscountPrice(e.target.value)}
-            placeholder="Enter your residence price with discount..."
+            placeholder="Enter your property price with discount..."
           />
         </div>
         <br />
