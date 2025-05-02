@@ -123,7 +123,7 @@ const ShopSettings = () => {
               placeholder={`${
                 seller?.description
                   ? seller.description
-                  : "Enter your agent description"
+                  : "Enter description"
               }`}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
