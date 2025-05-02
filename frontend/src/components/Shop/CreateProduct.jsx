@@ -245,7 +245,7 @@ const CreateProduct = () => {
         <br />
         <div>
           <label className="pb-2">
-            Product Stock <span className="text-red-500">*</span>
+            Maximum Tenant <span className="text-red-500">*</span>
           </label>
           <input
             type="number"
