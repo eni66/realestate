@@ -89,10 +89,10 @@ const ProductCard = ({ data,isEvent }) => {
                 ${data.originalPrice === 0
                   ? data.originalPrice
                   : data.discountPrice}
-              
+                /month
               </h5>
               <h4 className={`${styles.price}`}>
-                ${data.originalPrice ? data.originalPrice + " /month" : null}
+                ${data.originalPrice ? data.originalPrice + " " : null}
               </h4>
             </div>
             {/* <span className="font-[400] text-[17px] text-[#68d284]">
@@ -102,7 +102,7 @@ const ProductCard = ({ data,isEvent }) => {
         </Link>
 
         {/* side options */}
-        <div>
+        <div className="pt-3">
           {click ? (
             <AiFillHeart
               size={22}
