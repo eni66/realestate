@@ -85,12 +85,12 @@ const ProductCard = ({ data,isEvent }) => {
 
           <div className="py-2 flex items-center justify-between">
             <div className="flex">
-              <h6 className={`${styles.productDiscountPrice}`}>
+              <h5 className={`${styles.productDiscountPrice}`}>
                 ${data.originalPrice === 0
                   ? data.originalPrice
                   : data.discountPrice}
                 /month
-              </h6>
+              </h5>
               <h4 className={`${styles.price}`}>
                 ${data.originalPrice ? data.originalPrice + " /month" : null}
               </h4>
