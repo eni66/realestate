@@ -58,7 +58,7 @@ const Wishlist = ({ setOpenWishlist }) => {
               <div className="w-full border-t">
                 {wishlist &&
                   wishlist.map((i, index) => (
-                    <CartSingle key={index} data={i} removeFromWishlistHandler={removeFromWishlistHandler} />
+                    <CartSingle key={index} data={i} removeFromWishlistHandler={removeFromWishlistHandler} addToCartHandler={addToCartHandler} />
                   ))}
               </div>
             </div>
@@ -88,14 +88,14 @@ const CartSingle = ({ data,removeFromWishlistHandler,addToCartHandler }) => {
         <div className="pl-[5px]">
           <h1>{data.name}</h1>
           <h4 className="font-[600] pt-3 800px:pt-[3px] text-[17px] text-[#d02222] font-Roboto">
-            US${totalPrice}
+            ${totalPrice}/month
           </h4>
         </div>
-        <div>
+        {/* <div>
           <BsCartPlus size={20} className="cursor-pointer" tile="Add to cart"
            onClick={() => addToCartHandler(data)}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
