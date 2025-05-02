@@ -52,7 +52,7 @@ const CreateEvent = () => {
       toast.error(error);
     }
     if (success) {
-      toast.success("Event created successfully!");
+      toast.success("Property created successfully!");
       navigate("/dashboard-events");
       window.location.reload();
     }
@@ -101,7 +101,7 @@ const CreateEvent = () => {
 
   return (
     <div className="w-[90%] 800px:w-[50%] bg-white  shadow h-[80vh] rounded-[4px] p-3 overflow-y-scroll">
-      <h5 className="text-[30px] font-Poppins text-center">Create Event</h5>
+      <h5 className="text-[30px] font-Poppins text-center">Create Promotion</h5>
       {/* create event form */}
       <form onSubmit={handleSubmit}>
         <br />
@@ -115,7 +115,7 @@ const CreateEvent = () => {
             value={name}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setName(e.target.value)}
-            placeholder="Enter your event product name..."
+            placeholder="Enter your property name..."
           />
         </div>
         <br />
@@ -132,7 +132,7 @@ const CreateEvent = () => {
             value={description}
             className="mt-2 appearance-none block w-full pt-2 px-3 border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Enter your event product description..."
+            placeholder="Enter your property description..."
           ></textarea>
         </div>
         <br />
@@ -163,7 +163,7 @@ const CreateEvent = () => {
             value={tags}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setTags(e.target.value)}
-            placeholder="Enter your event product tags..."
+            placeholder="Enter your promotion tags..."
           />
         </div>
         <br />
@@ -175,7 +175,7 @@ const CreateEvent = () => {
             value={originalPrice}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setOriginalPrice(e.target.value)}
-            placeholder="Enter your event product price..."
+            placeholder="Enter your promotion price..."
           />
         </div>
         <br />
@@ -189,13 +189,13 @@ const CreateEvent = () => {
             value={discountPrice}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setDiscountPrice(e.target.value)}
-            placeholder="Enter your event product price with discount..."
+            placeholder="Enter your promotion price with discount..."
           />
         </div>
         <br />
         <div>
           <label className="pb-2">
-            Product Stock <span className="text-red-500">*</span>
+            Maximum Tenant Number <span className="text-red-500">*</span>
           </label>
           <input
             type="number"
@@ -203,7 +203,7 @@ const CreateEvent = () => {
             value={stock}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setStock(e.target.value)}
-            placeholder="Enter your event product stock..."
+            placeholder="Enter maximum tenant number..."
           />
         </div>
         <br />
@@ -219,7 +219,7 @@ const CreateEvent = () => {
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={handleStartDateChange}
             min={today}
-            placeholder="Enter your event product stock..."
+            placeholder="Enter promotion start date..."
           />
         </div>
         <br />
@@ -235,7 +235,7 @@ const CreateEvent = () => {
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={handleEndDateChange}
             min={minEndDate}
-            placeholder="Enter your event product stock..."
+            placeholder="Enter promotion end date..."
           />
         </div>
         <br />
