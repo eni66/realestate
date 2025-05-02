@@ -9,8 +9,8 @@ export const navItems = [
     //   url: "/best-selling",
     // },
     {
-      title: "Residents",
-      url: "/residents",
+      title: "Properties",
+      url: "/properties",
     },
     {
       title: "Promotions",

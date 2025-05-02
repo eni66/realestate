@@ -267,7 +267,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(1)}
           >
-            Residence Details
+            Property Details
           </h5>
           {active === 1 ? (
             <div className={`${styles.active_indicator}`} />
@@ -280,7 +280,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(2)}
           >
-            Residence Reviews
+            Property Reviews
           </h5>
           {active === 2 ? (
             <div className={`${styles.active_indicator}`} />
@@ -330,7 +330,7 @@ const ProductDetailsInfo = ({
 
           <div className="w-full flex justify-center">
             {data && data.reviews.length === 0 && (
-              <h5>No Reviews have for this residence!</h5>
+              <h5>No Reviews for this property!</h5>
             )}
           </div>
         </div>
