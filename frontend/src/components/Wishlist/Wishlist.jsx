@@ -55,12 +55,12 @@ const Wishlist = ({ setOpenWishlist }) => {
 
               {/* cart Single Items */}
               <br />
-              {/* <div className="w-full border-t">
+              <div className="w-full border-t">
                 {wishlist &&
                   wishlist.map((i, index) => (
-                    <CartSingle key={index} data={i} removeFromWishlistHandler={removeFromWishlistHandler} addToCartHandler={addToCartHandler} />
+                    <CartSingle key={index} data={i} removeFromWishlistHandler={removeFromWishlistHandler} />
                   ))}
-              </div> */}
+              </div>
             </div>
           </>
         )}
