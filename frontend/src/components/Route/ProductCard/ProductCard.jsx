@@ -102,7 +102,7 @@ const ProductCard = ({ data,isEvent }) => {
         </Link>
 
         {/* side options */}
-        <div className="pt-3">
+        <div>
           {click ? (
             <AiFillHeart
               size={22}
