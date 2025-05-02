@@ -89,7 +89,7 @@ const ProductCard = ({ data,isEvent }) => {
                 ${data.originalPrice === 0
                   ? data.originalPrice
                   : data.discountPrice}
-                /month
+              
               </h5>
               <h4 className={`${styles.price}`}>
                 ${data.originalPrice ? data.originalPrice + " /month" : null}
