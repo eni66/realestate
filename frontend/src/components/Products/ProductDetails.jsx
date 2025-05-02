@@ -365,7 +365,7 @@ const ProductDetailsInfo = ({
                 </span>
               </h5> */}
               <h5 className="font-[600] pt-3">
-                Total residence:{" "}
+                Total Properties:{" "}
                 <span className="font-[500]">
                   {products && products.length}
                 </span>
@@ -374,13 +374,13 @@ const ProductDetailsInfo = ({
                 Total Reviews:{" "}
                 <span className="font-[500]">{totalReviewsLength}</span>
               </h5>
-              <Link to="/">
+              {/* <Link to="/">
                 <div
                   className={`${styles.button} !rounded-[4px] !h-[39.5px] mt-3`}
                 >
                   <h4 className="text-white">Agent Profile</h4>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
