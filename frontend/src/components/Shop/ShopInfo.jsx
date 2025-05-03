@@ -27,7 +27,7 @@ const ShopInfo = ({ isOwner }) => {
   }, [])
   
 
-  const logoutHandler = async () => {
+  const logoutHandler = () => {
     axios.get(`${server}/shop/logout`,{
       withCredentials: true,
     });
