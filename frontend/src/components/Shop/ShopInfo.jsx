@@ -27,7 +27,7 @@ const ShopInfo = ({ isOwner }) => {
   }, [])
   
 
-  const logoutHandler = () => {
+  const logoutHandler = async () => {
     axios.get(`${server}/shop/logout`,{
       withCredentials: true,
     });
@@ -87,7 +87,7 @@ const ShopInfo = ({ isOwner }) => {
         <div className="py-3 px-4">
            <Link to="/settings">
            <div className={`${styles.button} !w-full !h-[42px] !rounded-[5px]`}>
-            <span className="text-white">Edit Acount</span>
+            <span className="text-white">Edit Account</span>
           </div>
            </Link>
           <div className={`${styles.button} !w-full !h-[42px] !rounded-[5px]`}
