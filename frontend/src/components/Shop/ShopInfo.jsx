@@ -27,25 +27,14 @@ const ShopInfo = ({ isOwner }) => {
   }, [])
   
 
-  // const logoutHandler = async () => {
-  //   axios.get(`${server}/shop/logout`,{
-  //     withCredentials: true,
-  //   });
-  //   window.location.reload();
-  // };
-
-  const logoutHandler = () => {
-    axios
-      .get(`${server}/shop/logout`, { withCredentials: true })
-      .then((res) => {
-        window.location.reload(true);
-        navigate("/login-shop");
-      })
-      .catch((error) => {
-        console.log(error.response.data.message);
-      });
+  const logoutHandler = async () => {
+    axios.get(`${server}/shop/logout`,{
+      withCredentials: true,
+    });
+    window.location.reload();
   };
 
+  
   const totalReviewsLength =
     products &&
     products.reduce((acc, product) => acc + product.reviews.length, 0);
