@@ -43,7 +43,7 @@ const Footer = () => {
             style={{ filter: "brightness(0) invert(1)" }}
           />
           <br />
-          <p>We provides apartments and rooms for rent in major US cities on flexible lease terms..</p>
+          <p>Roomvela provides apartments and rooms for rent in major cities on flexible lease terms..</p>
           <div className="flex items-center mt-[15px]">
             <AiFillFacebook size={25} className="cursor-pointer" />
             <AiOutlineTwitter
