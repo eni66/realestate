@@ -38,7 +38,7 @@ const Footer = () => {
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
           <img
             //src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-            src="../../../public/logo.svg"
+            src="/logo.svg"
             alt=""
             style={{ filter: "brightness(0) invert(1)" }}
           />
