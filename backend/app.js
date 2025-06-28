@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors({
-  origin: ['https://roomvella.com',],
+  origin: ['https://www.roomvella.com',],
   credentials: true
 }));
 
