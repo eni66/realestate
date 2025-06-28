@@ -39,7 +39,7 @@ router.post("/create-shop", catchAsyncErrors(async (req, res, next) => {
 
     const activationToken = createActivationToken(seller);
 
-    const activationUrl = `https://roomvella.com/seller/activation/${activationToken}`;
+    const activationUrl = `https://www.roomvella.com/seller/activation/${activationToken}`;
 
     try {
       await sendMail({
