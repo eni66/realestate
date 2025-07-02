@@ -66,9 +66,9 @@ const createActivationToken = (seller) => {
   });
 };
 
-// activate user
+// activate seller
 router.post(
-  "/activation",
+  "/seller/activation",
   catchAsyncErrors(async (req, res, next) => {
     try {
       const { activation_token } = req.body;
@@ -167,7 +167,7 @@ router.get(
   catchAsyncErrors(async (req, res, next) => {
     try {
       res.cookie("seller_token", null, {
-        expires: new Date(0),
+        expires: new Date(Date.now()),
         httpOnly: true,
         sameSite: "none",
         secure: true,
