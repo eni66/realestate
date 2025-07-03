@@ -93,7 +93,7 @@ router.delete(
         );
       }
     
-     await product.deleteOne();
+     await Product.findByIdAndDelete(req.params.id);
 
       res.status(201).json({
         success: true,
