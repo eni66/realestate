@@ -18,14 +18,15 @@ const AgentsPage = () => {
 
 const Agents = () => {
 
-  const dispatch = useDispatch();
-  const { sellers } = useSelector((state) => state.seller);
-  const [open, setOpen] = useState(false);
-  const [userId, setUserId] = useState("");
+  const [activeTab, setActiveTab] = useState(0);
 
-  useEffect(() => {
-    dispatch(getAllAgents());
-  }, [dispatch]);
+  const toggleTab = (tab) => {
+    if (activeTab === tab) {
+      setActiveTab(0);
+    } else {
+      setActiveTab(tab);
+    }
+  };
    
   return (
     <div>
