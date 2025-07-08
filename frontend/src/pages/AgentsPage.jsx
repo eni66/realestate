@@ -17,7 +17,15 @@ const AgentsPage = () => {
 };
 
 const Agents = () => {
-  const {allAgents} = useSelector((state) => state.seller);
+
+  const dispatch = useDispatch();
+  const { sellers } = useSelector((state) => state.seller);
+  const [open, setOpen] = useState(false);
+  const [userId, setUserId] = useState("");
+
+  useEffect(() => {
+    dispatch(getAllSellers());
+  }, [dispatch]);
    
   return (
     <div>
@@ -27,7 +35,7 @@ const Agents = () => {
         </div>
         <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 md:gap-[25px] lg:grid-cols-4 lg:gap-[25px] xl:grid-cols-5 xl:gap-[30px] mb-12 border-0">
         {
-            allAgents && allAgents.length !== 0 &&(
+            sellers && sellers.length !== 0 &&(
               <h1>Featured Products</h1>
             )
            }
