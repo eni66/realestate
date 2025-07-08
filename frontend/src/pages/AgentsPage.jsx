@@ -1,32 +1,39 @@
 import React, { useState } from "react";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import ShopInfo from "../../components/Shop/ShopInfo";
 import styles from "../styles/styles";
+
 
 const AgentsPage = () => {
   return (
     <div>
       <Header activeHeading={4} />
-      <Faq />
+      <Agents />
       <Footer />
     </div>
   );
 };
 
-const Faq = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
-  const toggleTab = (tab) => {
-    if (activeTab === tab) {
-      setActiveTab(0);
-    } else {
-      setActiveTab(tab);
-    }
-  };
-
+const Agents = () => {
+  const {allAgents} = useSelector((state) => state.sellers);
+   
   return (
-    <div className={`${styles.section} my-8`}>
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Let's Talk!</h2>
+    <div>
+      <div className={`${styles.section}`}>
+        <div className={`${styles.heading}`}>
+          {/* <h1>Featured Products</h1> */}
+        </div>
+        <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 md:gap-[25px] lg:grid-cols-4 lg:gap-[25px] xl:grid-cols-5 xl:gap-[30px] mb-12 border-0">
+        {
+            allAgents && allAgents.length !== 0 &&(
+              <>
+               {allAgents && allAgents.map((i, index) => <ShopInfo data={i} key={index} />)}
+              </>
+            )
+           }
+        </div>
+      </div>
     </div>
   );
 };
