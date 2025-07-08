@@ -24,7 +24,7 @@ const Agents = () => {
   const [userId, setUserId] = useState("");
 
   useEffect(() => {
-    dispatch(getAllSellers());
+    dispatch(getAllAgents());
   }, [dispatch]);
    
   return (
