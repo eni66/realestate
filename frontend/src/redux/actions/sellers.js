@@ -23,3 +23,26 @@ export const getAllSellers = () => async (dispatch) => {
     });
   }
 };
+
+// get all sellers -- User
+export const getAllSellers = () => async (dispatch) => {
+  try {
+    dispatch({
+      type: "getAllSellersRequest",
+    });
+
+    const { data } = await axios.get(`${server}/agents`, {
+      withCredentials: true,
+    });
+
+    dispatch({
+      type: "getAllSellersSuccess",
+      payload: data.sellers,
+    });
+  } catch (error) {
+    dispatch({
+      type: "getAllSellerFailed",
+    //   payload: error.response.data.message,
+    });
+  }
+};
