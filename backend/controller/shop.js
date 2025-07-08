@@ -161,6 +161,25 @@ router.get(
   })
 );
 
+
+// all sellers
+router.get(
+  "/agents",
+  catchAsyncErrors(async (req, res, next) => {
+    try {
+      const sellers = await Shop.find().sort({
+        createdAt: -1,
+      });
+      res.status(201).json({
+        success: true,
+        sellers,
+      });
+    } catch (error) {
+      return next(new ErrorHandler(error.message, 500));
+    }
+  })
+);
+
 // log out from shop
 router.get(
   "/logout",
