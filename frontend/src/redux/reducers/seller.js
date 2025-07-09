@@ -19,6 +19,19 @@ export const sellerReducer = createReducer(initialState, {
     state.isSeller = false;
   },
 
+  // get all Agents --- user
+  getAllAgentsRequest: (state) => {
+    state.isLoading = true;
+  },
+  getAllAgentsSuccess: (state, action) => {
+    state.isLoading = false;
+    state.sellers = action.payload;
+  },
+  getAllAgentsFailed: (state, action) => {
+    state.isLoading = false;
+    state.error = action.payload;
+  },
+  
   // get all sellers ---admin
   getAllSellersRequest: (state) => {
     state.isLoading = true;
@@ -34,4 +47,5 @@ export const sellerReducer = createReducer(initialState, {
   clearErrors: (state) => {
     state.error = null;
   },
+  
 });
