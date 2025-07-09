@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import { getAllAgents } from "../redux/actions/sellers";
