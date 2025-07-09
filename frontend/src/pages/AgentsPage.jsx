@@ -19,7 +19,12 @@ const AgentsPage = () => {
 
 
 const Agents = () => {
+  const dispatch = useDispatch();
   const { sellers } = useSelector((state) => state.seller);
+
+  useEffect(() => {
+    dispatch(getAllAgents());
+  }, [dispatch]);
 
   return (
     <div className={`${styles.section} my-8`}>
