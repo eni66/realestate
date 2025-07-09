@@ -16,14 +16,9 @@ const AgentsPage = () => {
 
 
 const Agents = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const { sellers } = useSelector((state) => state.seller);
 
-  const toggleTab = (tab) => {
-    if (activeTab === tab) {
-      setActiveTab(0);
-    } else {
-      setActiveTab(tab);
-    }
+  
   };
 
   return (
