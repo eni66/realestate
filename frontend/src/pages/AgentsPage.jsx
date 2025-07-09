@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import { getAllAgents } from "../redux/actions/sellers";
 import styles from "../styles/styles";
 
 
