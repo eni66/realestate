@@ -19,12 +19,9 @@ const AgentsPage = () => {
 const Agents = () => {
   const [activeTab, setActiveTab] = useState(0);
 
-  
-  };
-
   return (
     <div className={`${styles.section} my-8`}>
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Agents!</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Agents</h2>
       
     </div>
   );
