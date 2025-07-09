@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import { getAllAgents } from "../redux/actions/sellers";
 import styles from "../styles/styles";
 
 
