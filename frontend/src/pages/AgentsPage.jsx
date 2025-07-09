@@ -18,7 +18,7 @@ const AgentsPage = () => {
 
 
 const Agents = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const { sellers } = useSelector((state) => state.seller);
 
   return (
     <div className={`${styles.section} my-8`}>
