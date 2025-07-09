@@ -164,7 +164,7 @@ router.get(
 
 // all sellers
 router.get(
-  "/agents",
+  "/get-all-sellers",
   catchAsyncErrors(async (req, res, next) => {
     try {
       const sellers = await Shop.find().sort({
