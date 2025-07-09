@@ -5,7 +5,7 @@ import { AiOutlineDelete, AiOutlineEye } from "react-icons/ai";
 import { Button } from "@material-ui/core";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
-import { getAllSellers } from "../redux/actions/sellers";
+import { getAllAgents } from "../redux/actions/sellers";
 import ShopInfo from "../components/Shop/ShopInfo";
 import styles from "../styles/styles";
 
@@ -28,7 +28,7 @@ const Agents = () => {
   const [userId, setUserId] = useState("");
 
   useEffect(() => {
-    dispatch(getAllSellers());
+    dispatch(getAllAgents());
   }, [dispatch]);
 
   const columns = [
