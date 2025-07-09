@@ -31,7 +31,7 @@ export const getAllAgents = () => async (dispatch) => {
       type: "getAllAgentsRequest",
     });
 
-    const { data } = await axios.get(`${server}/agents/get-all-sellers`, {
+    const { data } = await axios.get(`${server}/shop/get-all-sellers`, {
       withCredentials: true,
     });
 
