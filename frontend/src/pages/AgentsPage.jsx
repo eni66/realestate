@@ -21,7 +21,7 @@ const AgentsPage = () => {
 };
 
 
-const AllSellers = () => {
+const Agents = () => {
   const dispatch = useDispatch();
   const { sellers } = useSelector((state) => state.seller);
   const [open, setOpen] = useState(false);
