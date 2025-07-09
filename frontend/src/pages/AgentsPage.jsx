@@ -18,7 +18,7 @@ const AgentsPage = () => {
 
 
 const Agents = () => {
-  const { sellers } = useSelector((state) => state.seller);
+  const [activeTab, setActiveTab] = useState(0);
 
   
   };
