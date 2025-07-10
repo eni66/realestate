@@ -58,7 +58,7 @@ const ShopInfo = ({ isOwner, data: shopData }) => {
         <Loader />
       ) : (
         <div>
-          <div className="w-full py-5">
+          <div className="w-full bg-white rounded-lg shadow-sm cursor-pointer py-5">
             <div className="w-full flex item-center justify-center">
               <img
                 src={`${data.avatar?.url}`}
@@ -67,7 +67,7 @@ const ShopInfo = ({ isOwner, data: shopData }) => {
               />
             </div>
             <h3 className="text-center py-2 text-[20px]">{data.name}</h3>
-            <p className="text-[16px] text-[#000000a6] p-[10px] flex items-center">
+            <p className="text-[16px] text-[#000000a6] p-[10px] flex text-center items-center">
               {data.description}
             </p>
           </div>
