@@ -91,7 +91,13 @@ router.delete(
         );
       }
       */}
-     await cloudinary.v2.api.delete_resources(product.images.public_id);
+     // Extract public_ids from the images array
+      const publicIds = product.images.map(image => image.public_id);
+      
+      // Delete all images at once using delete_resources
+      if (publicIds.length > 0) {
+        await cloudinary.v2.api.delete_resources(publicIds);
+      }
       
      await Product.findByIdAndDelete(req.params.id);
 
