@@ -95,9 +95,9 @@ const Agents = () => {
         {
             sellers && sellers.length !== 0 &&(
               <>
-               {sellers && sellers.map((i, index) => <ShopInfo isOwner={false} data={i} key={index} />)}
-              </>
-              <>
+               {sellers && sellers.map((i, index) => <ShopInfo isOwner={false} data={i} key={index} />)};
+              
+              
               sellers &&
                sellers.forEach((item) => {
                  <h1>hi</h1>
