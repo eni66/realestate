@@ -95,9 +95,9 @@ const Agents = () => {
         {
             sellers && sellers.length !== 0 &&(
               <>
-               {sellers.map((seller, index) => (
-                <ShopInfo isOwner={false} shopId={seller._id} key={seller._id || index} />
-              ))};
+               {sellers && sellers.map((i, index) => 
+                <ShopInfo isOwner={false} data={i} key={index} />
+              )};
           
               </>
             )
