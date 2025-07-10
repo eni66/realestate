@@ -97,6 +97,12 @@ const Agents = () => {
               <>
                {sellers && sellers.map((i, index) => <ShopInfo isOwner={false} data={i} key={index} />)}
               </>
+              <>
+              sellers &&
+               sellers.forEach((item) => {
+                 <h1>hi</h1>
+               });
+              </>
             )
            }
         </div>
