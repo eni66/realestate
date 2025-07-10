@@ -66,7 +66,9 @@ const ShopInfo = ({ isOwner, data: shopData }) => {
                 className="w-[150px] h-[150px] object-cover rounded-full"
               />
             </div>
+            <Link to={`/shop/preview/${data.shop._id}`}>
             <h3 className="text-center py-2 text-[20px]">{data.name}</h3>
+            </Link>
             <p className="text-[16px] text-[#000000a6] p-[10px] text-center">
               {data.description}
             </p>
