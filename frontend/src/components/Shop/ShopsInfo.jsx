@@ -71,28 +71,7 @@ const ShopInfo = ({ isOwner, data: shopData }) => {
               {data.description}
             </p>
           </div>
-          <div className="p-3">
-            <h5 className="font-[600]">Total Properties</h5>
-            <h4 className="text-[#000000a6]">{shopProducts && shopProducts.length}</h4>
-          </div>
-          {/* 
-          <div className="p-3">
-            <h5 className="font-[600]">Address</h5>
-            <h4 className="text-[#000000a6]">{data.address}</h4>
-          </div>
-          <div className="p-3">
-            <h5 className="font-[600]">Phone Number</h5>
-            <h4 className="text-[#000000a6]">{data.phoneNumber}</h4>
-          </div>
-         
-          <div className="p-3">
-            <h5 className="font-[600]">Ratings</h5>
-            <h4 className="text-[#000000b0]">{averageRating}/5</h4>
-          </div>
-          <div className="p-3">
-            <h5 className="font-[600]">Joined On</h5>
-            <h4 className="text-[#000000b0]">{data?.createdAt?.slice(0, 10)}</h4>
-          </div> */}
+        
           {isOwner && (
             <div className="py-3 px-4">
               <Link to="/settings">
