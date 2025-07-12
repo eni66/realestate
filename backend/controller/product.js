@@ -98,9 +98,11 @@ router.delete(
       if (publicIds.length > 0) {
         await cloudinary.v2.api.delete_resources(publicIds);
       }
-      */}
+    
      await Product.findByIdAndDelete(req.params.id);
-
+  */}
+      await product.remove();
+      
       res.status(200).json({
         success: true,
         message: "Product Deleted successfully!",
