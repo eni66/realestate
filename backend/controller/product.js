@@ -90,7 +90,7 @@ router.delete(
           product.images[i].public_id
         );
       }
-      */}
+      
      // Extract public_ids from the images array
       const publicIds = product.images.map(image => image.public_id);
       
@@ -98,7 +98,7 @@ router.delete(
       if (publicIds.length > 0) {
         await cloudinary.v2.api.delete_resources(publicIds);
       }
-      
+      */}
      await Product.findByIdAndDelete(req.params.id);
 
       res.status(200).json({
