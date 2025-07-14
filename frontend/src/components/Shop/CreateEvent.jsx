@@ -23,6 +23,18 @@ const CreateEvent = () => {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
 
+useEffect(() => {
+    if (error) {
+      toast.error(error);
+    }
+    if (success) {
+      toast.success("Promotion created successfully!");
+      navigate("/dashboard-events");
+      window.location.reload();
+    }
+  }, [dispatch, error, success]);
+
+  
   const handleStartDateChange = (e) => {
     const startDate = new Date(e.target.value);
     const minEndDate = new Date(startDate.getTime() + 3 * 24 * 60 * 60 * 1000);
@@ -47,16 +59,6 @@ const CreateEvent = () => {
         .slice(0, 10)
     : "";
 
-  useEffect(() => {
-    if (error) {
-      toast.error(error);
-    }
-    if (success) {
-      toast.success("Property created successfully!");
-      navigate("/dashboard-events");
-      window.location.reload();
-    }
-  }, [dispatch, error, success]);
 
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files);
