@@ -45,9 +45,10 @@ const EventCard = ({ active, data }) => {
               €{data.discountPrice}
             </h5>
           </div>
-          <span className="pr-3 font-[400] text-[17px] text-[#44a55e]">
+        {/* <span className="pr-3 font-[400] text-[17px] text-[#44a55e]">
             {data.sold_out} sold
           </span>
+          */}
         </div>
         <CountDown data={data} />
         <br />
@@ -55,7 +56,7 @@ const EventCard = ({ active, data }) => {
           <Link to={`/product/${data._id}?isEvent=true`}>
             <div className={`${styles.button} text-[#fff]`}>See Details</div>
           </Link>
-          <div className={`${styles.button} text-[#fff] ml-5`} onClick={() => addToCartHandler(data)}>Add to cart</div>
+          {/*  <div className={`${styles.button} text-[#fff] ml-5`} onClick={() => addToCartHandler(data)}>Add to cart</div> */}
         </div>
       </div>
     </div>
