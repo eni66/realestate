@@ -38,7 +38,7 @@ const EventCard = ({ active, data }) => {
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
         </h2>
         <p>
-          {data.description.length > 80 ? data.description.slice(0, 40) + "..." : data.description}
+          {data.description.length > 100 ? data.description.slice(0, 100) + "..." : data.description}
         </p>
         <div className="flex py-2 justify-between">
           <div className="flex">
