@@ -15,10 +15,11 @@ const EventsPage = () => {
           <Header activeHeading={3} />
           
           {
-          allEvents.length !== 0 && (
+          allEvents && allEvents.length !== 0 && (
             //<EventCard active={true} data={allEvents && allEvents[0]} />
-            {allEvents && allEvents.map((i, index) => <EventCard data={i} key={index} />)}
-        
+            <>  
+              {allEvents && allEvents.map((i, index) => <EventCard data={i} key={index} />)}
+            </>
           )
          }
          <h4 className="w-full flex justify-center">{
