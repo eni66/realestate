@@ -18,10 +18,7 @@ const Events = () => {
       <div className="w-full grid">
          {
           allEvents.length !== 0 && (
-           // <EventCard data={allEvents && allEvents[0]} />
-            <>
-              {allEvents && allEvents.map((i, index) => <EventCard data={i} key={index} />)}
-            </>
+           <EventCard data={allEvents && allEvents[0]} />
           )
          }
          <h4>{
