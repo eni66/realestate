@@ -99,6 +99,9 @@ useEffect(() => {
       Finish_Date: endDate?.toISOString(),
     };
     dispatch(createevent(data));
+    toast.success("Promotion created successfully!");
+      navigate("/dashboard-events");
+      window.location.reload();
   };
 
   return (
