@@ -44,7 +44,7 @@ router.post(
 
         const event = await Event.create(productData);
 
-        res.status(201).json({
+        res.status(200).json({
           success: true,
           event,
         });
