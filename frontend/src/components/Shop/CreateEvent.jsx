@@ -23,7 +23,7 @@ const CreateEvent = () => {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
 
-  {/* useEffect(() => {
+  useEffect(() => {
     if (error) {
       toast.error(error);
     }
@@ -33,7 +33,7 @@ const CreateEvent = () => {
       window.location.reload();
     }
   }, [dispatch, error, success]);
-*/}
+
   
   const handleStartDateChange = (e) => {
     const startDate = new Date(e.target.value);
@@ -100,18 +100,6 @@ const CreateEvent = () => {
     };
     dispatch(createevent(data));
   };
-
-  useEffect(() => {
-    if (error) {
-      toast.error(error);
-    }
-    if (success) {
-      toast.success("Promotion created successfully!");
-      navigate("/dashboard-events");
-      window.location.reload();
-    }
-  }, [dispatch, error, success]);
-
 
   return (
     <div className="w-[90%] 800px:w-[50%] bg-white  shadow h-[80vh] rounded-[4px] p-3 overflow-y-scroll">
