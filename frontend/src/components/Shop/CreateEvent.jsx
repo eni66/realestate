@@ -99,6 +99,8 @@ const CreateEvent = () => {
       Finish_Date: endDate?.toISOString(),
     };
     dispatch(createevent(data));
+    navigate("/dashboard-events");
+      window.location.reload();
   };
 
   return (
