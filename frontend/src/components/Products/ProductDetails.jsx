@@ -259,7 +259,17 @@ const ProductDetailsInfo = ({
 
   return (
     <div className="bg-[#f5f6fb] px-3 800px:px-10 py-2 rounded">
-      <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src={`https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=${data?.shop?.address} &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed`}></iframe>
+    <iframe
+  className="gmap_iframe"
+  width="100%"
+  frameBorder="0"
+  scrolling="no"
+  marginHeight="0"
+  marginWidth="0"
+  src={`https://maps.google.com/maps?q=${encodeURIComponent(data?.shop?.address)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
+>
+</iframe>
+
       {/* <div className="w-full flex justify-between border-b pt-10 pb-2">
         <div className="relative">
           <h5
