@@ -86,9 +86,9 @@ const ProductDetailsCard = ({ setOpen, data }) => {
                 <div className="flex">
                   <Link to={`/shop/preview/${data.shop._id}`} className="flex">
                     <img
-                      src={`${data.images && data.images[0]?.url}`}
+                      src={`${data?.shop?.avatar?.url}`}
                       alt=""
-                      className="w-[50px] h-[50px] rounded-full mr-2"
+                      className="w-[50px] h-[50px] rounded-full mt-2 mr-2"
                     />
                     <div>
                       <h3 className={`${styles.shop_name}`}>
