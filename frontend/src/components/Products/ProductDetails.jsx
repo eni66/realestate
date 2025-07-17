@@ -349,7 +349,7 @@ const ProductDetailsInfo = ({
                 <div className="pl-3">
                   <h3 className={`${styles.shop_name}`}>{data.shop.name}</h3>
                   <h5 className="pb-2 text-[15px]">
-                    ({averageRating}/5) Ratings
+                    5.0 Ratings
                   </h5>
                 </div>
               </div>
@@ -372,7 +372,7 @@ const ProductDetailsInfo = ({
               </h5>
               <h5 className="font-[600] pt-3">
                 Total Reviews:{" "}
-                <span className="font-[500]">{totalReviewsLength}</span>
+                <span className="font-[500]">50+</span>
               </h5>
               {/* <Link to="/">
                 <div
