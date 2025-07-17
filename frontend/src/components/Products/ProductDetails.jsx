@@ -260,7 +260,7 @@ const ProductDetailsInfo = ({
   return (
     <div className="bg-[#f5f6fb] px-3 800px:px-10 py-2 rounded">
       <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=19 Gardiner Pl Dublin Ireland &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-      <div className="w-full flex justify-between border-b pt-10 pb-2">
+      {/* <div className="w-full flex justify-between border-b pt-10 pb-2">
         <div className="relative">
           <h5
             className={
@@ -359,12 +359,12 @@ const ProductDetailsInfo = ({
           </div>
           <div className="w-full 800px:w-[50%] mt-5 800px:mt-0 800px:flex flex-col items-end">
             <div className="text-left">
-              {/* <h5 className="font-[600]">
+              <h5 className="font-[600]">
                 Joined on:{" "}
                 <span className="font-[500]">
                   {data.shop?.createdAt?.slice(0, 10)}
                 </span>
-              </h5> */}
+              </h5>
               <h5 className="font-[600] pt-3">
                 Total Properties:{" "}
                 <span className="font-[500]">
@@ -375,17 +375,17 @@ const ProductDetailsInfo = ({
                 Total Reviews:{" "}
                 <span className="font-[500] text-[#3bc177]">20+</span>
               </h5>
-              {/* <Link to="/">
+               <Link to="/">
                 <div
                   className={`${styles.button} !rounded-[4px] !h-[39.5px] mt-3`}
                 >
                   <h4 className="text-white">Agent Profile</h4>
                 </div>
-              </Link> */}
+              </Link>
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
