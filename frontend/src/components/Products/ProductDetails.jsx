@@ -372,7 +372,7 @@ const ProductDetailsInfo = ({
               </h5>
               <h5 className="font-[600] pt-3">
                 Total Reviews:{" "}
-                <span className="font-[500] text-[#00FF00]">20+</span>
+                <span className="font-[500] text-[#3bc177]">20+</span>
               </h5>
               {/* <Link to="/">
                 <div
