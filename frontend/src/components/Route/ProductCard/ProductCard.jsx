@@ -106,7 +106,7 @@ const ProductCard = ({ data,isEvent }) => {
           {click ? (
             <AiFillHeart
               size={22}
-              className="cursor-pointer absolute right-2 top-5"
+              className="cursor-pointer absolute right-3 top-5"
               onClick={() => removeFromWishlistHandler(data)}
               color={click ? "red" : "#333"}
               title="Remove from wishlist"
@@ -114,7 +114,7 @@ const ProductCard = ({ data,isEvent }) => {
           ) : (
             <AiOutlineHeart
               size={22}
-              className="cursor-pointer absolute right-2 top-5"
+              className="cursor-pointer absolute right-3 top-5"
               onClick={() => addToWishlistHandler(data)}
               color={click ? "red" : "#333"}
               title="Add to wishlist"
@@ -122,7 +122,7 @@ const ProductCard = ({ data,isEvent }) => {
           )}
           <AiOutlineEye
             size={22}
-            className="cursor-pointer absolute right-2 top-14"
+            className="cursor-pointer absolute right-3 top-14"
             onClick={() => setOpen(!open)}
             color="#333"
             title="Quick view"
