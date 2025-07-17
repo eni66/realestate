@@ -220,7 +220,7 @@ const ProductDetails = ({ data }) => {
                       </h3>
                     </Link>
                     <h5 className="pb-3 text-[15px]">
-                      ({averageRating}/5) Ratings
+                      5.0 Ratings
                     </h5>
                   </div>
                   <div
