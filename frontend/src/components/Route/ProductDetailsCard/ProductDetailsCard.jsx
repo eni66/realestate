@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import styles from "../../../styles/styles";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import Ratings from "../Products/Ratings";
+import Ratings from "../../Products/Ratings";
 import { addTocart } from "../../../redux/actions/cart";
 import {
   addToWishlist,
