@@ -40,8 +40,9 @@ const EventCard = ({ active, data }) => {
         {/* <h2 className={`${styles.productTitle}`}>
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
         </h2> */}
-        
-        <h4 className="py-3 font-[500] no-underline">
+        <Link to={`${isEvent === true ? `/product/${data._id}?isEvent=true` : `/product/${data._id}`}`}>
+          
+        <h4 className="py-3 font-[500]">
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
         </h4>
 
@@ -56,11 +57,11 @@ const EventCard = ({ active, data }) => {
           color="#f6b100"
           className="mr-2 cursor-pointer"
            />
-            <h4 className="font-[300] no-underline">
+            <h4 className="font-[300]">
             {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
             </h4>
           </div>
-
+        </Link>
         <div className="flex py-2 justify-between">
           <div className="flex">
             <h5 className="font-[500] text-[18px] text-[#d55b45] pr-3 line-through">
