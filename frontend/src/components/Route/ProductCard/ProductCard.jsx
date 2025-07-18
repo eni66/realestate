@@ -6,6 +6,7 @@ import {
   AiOutlineHeart,
   AiOutlineShoppingCart,
   AiOutlineStar,
+  AiOutlineEnvironment,
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import styles from "../../../styles/styles";
@@ -79,8 +80,16 @@ const ProductCard = ({ data,isEvent }) => {
             {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
           </h4>
 
-          <div className="flex">
+          {/* <div className="flex">
           <Ratings rating={data?.ratings} />
+          </div> */}
+          <div className="flex">
+      
+          <AiOutlineEnvironment
+          size={20}
+          color="#f6b100"
+          className="mr-2 cursor-pointer"
+           />
           </div>
 
           <div className="py-2 flex items-center justify-between">
