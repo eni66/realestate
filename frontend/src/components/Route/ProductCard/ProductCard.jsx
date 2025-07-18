@@ -91,7 +91,7 @@ const ProductCard = ({ data,isEvent }) => {
           className="mr-2 cursor-pointer"
            />
             <h4 className="font-[300]">
-            {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
+            {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
             </h4>
           </div>
 
