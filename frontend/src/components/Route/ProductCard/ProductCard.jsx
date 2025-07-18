@@ -84,7 +84,7 @@ const ProductCard = ({ data,isEvent }) => {
 
           {/* <div className="flex">
           <Ratings rating={data?.ratings} />
-          </div> */}
+          </div> 
           <div className="flex">
       
           <AiOutlineEnvironment
@@ -95,7 +95,7 @@ const ProductCard = ({ data,isEvent }) => {
             <h4 className="font-[300]">
             {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
             </h4>
-          </div>
+          </div> */}
 
           <div className="py-2 flex items-center justify-between">
             {/* <div className="flex">
