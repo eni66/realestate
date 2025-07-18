@@ -40,7 +40,7 @@ const EventCard = ({ active, data }) => {
         {/* <h2 className={`${styles.productTitle}`}>
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
         </h2> */}
-        <Link to={`${isEvent === true ? `/product/${data._id}?isEvent=true` : `/product/${data._id}`}`}>
+        <Link to="">
           
         <h4 className="py-3 font-[500]">
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
