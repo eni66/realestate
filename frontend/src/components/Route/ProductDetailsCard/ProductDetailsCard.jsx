@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import styles from "../../../styles/styles";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
+import Ratings from "./Ratings";
 import { addTocart } from "../../../redux/actions/cart";
 import {
   addToWishlist,
@@ -94,6 +95,7 @@ const ProductDetailsCard = ({ setOpen, data }) => {
                       <h3 className={`${styles.shop_name}`}>
                         {data.shop.name}
                       </h3>
+                      <Ratings rating={data?.ratings} />
                       <h5 className="pb-3 text-[15px]">5.0 Ratings</h5>
                     </div>
                   </Link>
