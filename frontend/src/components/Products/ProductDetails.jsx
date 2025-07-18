@@ -231,6 +231,7 @@ const ProductDetails = ({ data }) => {
                         {data.shop.name}
                       </h3>
                     </Link>
+                    <Ratings rating={data?.ratings} />
                     <h5 className="pb-3 text-[15px]">
                       5.0 Ratings
                     </h5>
