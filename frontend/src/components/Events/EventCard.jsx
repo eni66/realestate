@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "../../styles/styles";
+import {
+  AiOutlineEnvironment,
+} from "react-icons/ai";
 import CountDown from "./CountDown";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -40,6 +43,18 @@ const EventCard = ({ active, data }) => {
         <p>
           {data.description.length > 100 ? data.description.slice(0, 100) + "..." : data.description}
         </p>
+        <div className="flex">
+      
+          <AiOutlineEnvironment
+          size={20}
+          color="#f6b100"
+          className="mr-2 cursor-pointer"
+           />
+            <h4 className="font-[300]">
+            {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
+            </h4>
+          </div>
+
         <div className="flex py-2 justify-between">
           <div className="flex">
             <h5 className="font-[500] text-[18px] text-[#d55b45] pr-3 line-through">
