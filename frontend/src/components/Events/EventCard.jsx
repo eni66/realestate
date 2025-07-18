@@ -37,9 +37,13 @@ const EventCard = ({ active, data }) => {
         <img src={`${data.images[0]?.url}`} alt="" />
       </div>
       <div className="w-full lg:[w-50%] flex flex-col justify-center">
-        <h2 className={`${styles.productTitle}`}>
+        {/* <h2 className={`${styles.productTitle}`}>
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
-        </h2>
+        </h2> */}
+        <h4 className="pb-3 font-[500]">
+            {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
+          </h4>
+
         
         {/* <p>
           {data.description.length > 100 ? data.description.slice(0, 100) + "..." : data.description}
