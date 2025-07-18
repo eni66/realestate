@@ -34,7 +34,7 @@ const ShopProfileData = ({ isOwner }) => {
                 active === 1 ? "text-red-500" : "text-[#333]"
               } cursor-pointer pr-[20px]`}
             >
-              Agent Properties
+              Properties
             </h5>
           </div>
           <div className="flex items-center" onClick={() => setActive(2)}>
