@@ -90,6 +90,9 @@ const ProductCard = ({ data,isEvent }) => {
           color="#f6b100"
           className="mr-2 cursor-pointer"
            />
+            <h4 className="font-[300]">
+            {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
+            </h4>
           </div>
 
           <div className="py-2 flex items-center justify-between">
