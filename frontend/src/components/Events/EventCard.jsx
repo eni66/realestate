@@ -37,14 +37,14 @@ const EventCard = ({ active, data }) => {
         <img src={`${data.images[0]?.url}`} alt="" />
       </div>
       <div className="w-full lg:[w-50%] flex flex-col justify-center no-underline">
-         <h2 className={`${styles.productTitle}`}>
+        {/* <h2 className={`${styles.productTitle}`}>
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
-        </h2>
-        <h4 className="py-3 font-[500] no-underline">
-            {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
-          </h4>
-
+        </h2> */}
         
+        <h4 className="py-3 font-[500] no-underline">
+          {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
+        </h4>
+
         {/* <p>
           {data.description.length > 100 ? data.description.slice(0, 100) + "..." : data.description}
         </p> */}
@@ -56,7 +56,7 @@ const EventCard = ({ active, data }) => {
           color="#f6b100"
           className="mr-2 cursor-pointer"
            />
-            <h4 className="font-[300]">
+            <h4 className="font-[300] no-underline">
             {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
             </h4>
           </div>
