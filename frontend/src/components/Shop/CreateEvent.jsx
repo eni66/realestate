@@ -15,6 +15,8 @@ const CreateEvent = () => {
   const [images, setImages] = useState([]);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [address, setAddress] = useState("");
+  const [zipCode, setZipCode] = useState("");
   const [category, setCategory] = useState("");
   const [tags, setTags] = useState("");
   const [originalPrice, setOriginalPrice] = useState();
@@ -88,6 +90,8 @@ const CreateEvent = () => {
     const data = {
       name,
       description,
+      address,
+      zipCode,
       category,
       tags,
       originalPrice,
@@ -137,6 +141,34 @@ const CreateEvent = () => {
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Enter your property description..."
           ></textarea>
+        </div>
+        <br />
+        <div>
+          <label className="pb-2">
+            Address <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            name="address"
+            value={address}
+            className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            onChange={(e) => setAddress(e.target.value)}
+            placeholder="Enter your property address..."
+          />
+        </div>
+        <br />
+        <div>
+          <label className="pb-2">
+            Zipcode <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            name="zipCode"
+            value={zipCode}
+            className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            onChange={(e) => setZipCode(e.target.value)}
+            placeholder="Enter your property zipCode..."
+          />
         </div>
         <br />
         <div>
