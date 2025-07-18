@@ -72,19 +72,19 @@ const ProductCard = ({ data,isEvent }) => {
             className="w-full h-[170px] object-cover"
           />
         </Link>
-        
+        {/*
         <Link to={`/shop/preview/${data?.shop._id}`}>
           <h5 className={`${styles.shop_name}`}>{data.shop.name}</h5>
         </Link>
-        
+        */}
         <Link to={`${isEvent === true ? `/product/${data._id}?isEvent=true` : `/product/${data._id}`}`}>
-          <h4 className="pb-3 font-[500]">
+          <h4 className="py-3 font-[500]">
             {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
           </h4>
 
           {/* <div className="flex">
           <Ratings rating={data?.ratings} />
-          </div> 
+          </div> */}
           <div className="flex">
       
           <AiOutlineEnvironment
@@ -95,7 +95,7 @@ const ProductCard = ({ data,isEvent }) => {
             <h4 className="font-[300]">
             {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
             </h4>
-          </div> */}
+          </div>
 
           <div className="py-2 flex items-center justify-between">
             {/* <div className="flex">
