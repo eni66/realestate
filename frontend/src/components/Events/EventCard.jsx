@@ -43,7 +43,7 @@ const EventCard = ({ active, data }) => {
         <p>
           {data.description.length > 100 ? data.description.slice(0, 100) + "..." : data.description}
         </p>
-        <div className="flex">
+        <div className="flex py-3">
       
           <AiOutlineEnvironment
           size={20}
