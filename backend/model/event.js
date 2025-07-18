@@ -9,6 +9,14 @@ const eventSchema = new mongoose.Schema({
         type: String,
         required:[true,"Please enter your event product description!"],
     },
+    address: {
+       type: String,
+       required: [true, "Please enter your product address!"],
+    },
+    zipCode: {
+       type: String,
+       required: [true, "Please enter your product zipcode!"],
+    },
     category:{
         type: String,
         required:[true,"Please enter your event product category!"],
