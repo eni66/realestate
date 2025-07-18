@@ -26,7 +26,7 @@ const Ratings = ({ rating }) => {
       );
     } else {
       stars.push(
-        <AiOutlineStar
+        <AiFillStar
           key={i}
           size={20}
           color="#f6ba00"
