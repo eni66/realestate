@@ -100,6 +100,7 @@ const ProductCard = ({ data,isEvent }) => {
               <h5 className={`${styles.price}`}>
                 €{data.originalPrice ? data.originalPrice + " " : null}
               </h5>
+              </div>
               <h5 className={`${styles.productDiscountPrice}`}>
                 €{data.originalPrice === 0
                   ? data.originalPrice
@@ -107,7 +108,7 @@ const ProductCard = ({ data,isEvent }) => {
                 /month
               </h5>
               
-            </div>
+            
             {/* <span className="font-[400] text-[17px] text-[#68d284]">
               {data?.sold_out} sold
             </span> */}
