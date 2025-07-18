@@ -40,10 +40,12 @@ const EventCard = ({ active, data }) => {
         <h2 className={`${styles.productTitle}`}>
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
         </h2>
-        <p>
+        
+        {/* <p>
           {data.description.length > 100 ? data.description.slice(0, 100) + "..." : data.description}
-        </p>
-        <div className="flex py-3">
+        </p> */}
+        
+        <div className="flex">
       
           <AiOutlineEnvironment
           size={20}
