@@ -4,6 +4,7 @@ import {
   AiOutlineHeart,
   AiOutlineMessage,
   AiOutlineShoppingCart,
+  AiOutlineEnvironment,
 } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
@@ -150,6 +151,17 @@ const ProductDetails = ({ data }) => {
               <div className="w-full 800px:w-[50%] pt-5">
                 <h1 className={`${styles.productTitle}`}>{data.name}</h1>
                 <p>{data.description}</p>
+                 <div className="flex">
+      
+                  <AiOutlineEnvironment
+                   size={20}
+                   color="#f6b100"
+                   className="mr-2 cursor-pointer"
+                    />
+                   <h4 className="font-[300]">
+                    {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
+                    </h4>
+                   </div>
                 <div className="flex pt-3">
                   <h4 className={`${styles.productDiscountPrice}`}>
                     €{data.discountPrice}/month
