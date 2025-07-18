@@ -36,11 +36,11 @@ const EventCard = ({ active, data }) => {
       <div className="w-full lg:-w[50%] m-auto">
         <img src={`${data.images[0]?.url}`} alt="" />
       </div>
-      <div className="w-full lg:[w-50%] flex flex-col justify-center">
+      <div className="w-full lg:[w-50%] flex flex-col justify-center no-underline">
         {/* <h2 className={`${styles.productTitle}`}>
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
         </h2> */}
-        <h4 className={`${styles.productTitle}`}>
+        <h4 className="pb-3 font-[500]">
             {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
           </h4>
 
