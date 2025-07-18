@@ -40,7 +40,7 @@ const EventCard = ({ active, data }) => {
         {/* <h2 className={`${styles.productTitle}`}>
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
         </h2> */}
-        <h4 className="pb-3 font-[500]">
+        <h4 className="py-3 font-[500]">
             {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
           </h4>
 
@@ -54,7 +54,7 @@ const EventCard = ({ active, data }) => {
           <AiOutlineEnvironment
           size={20}
           color="#f6b100"
-          className="mr-2 cursor-pointer"
+          className="mr-2"
            />
             <h4 className="font-[300]">
             {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
