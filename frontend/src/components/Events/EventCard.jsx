@@ -40,7 +40,7 @@ const EventCard = ({ active, data }) => {
         {/* <h2 className={`${styles.productTitle}`}>
           {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
         </h2> */}
-        <h4 className="pb-3 font-[500]">
+        <h4 className="py-3 font-[500] no-underline">
             {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}
           </h4>
 
