@@ -151,7 +151,7 @@ const ProductDetails = ({ data }) => {
               <div className="w-full 800px:w-[50%] pt-5">
                 <h1 className={`${styles.productTitle}`}>{data.name}</h1>
                 <p>{data.description}</p>
-                 <div className="flex">
+                 <div className="flex py-3">
       
                   <AiOutlineEnvironment
                    size={20}
@@ -159,7 +159,7 @@ const ProductDetails = ({ data }) => {
                    className="mr-2 cursor-pointer"
                     />
                    <h4 className="font-[300]">
-                    {data.address.length > 40 ? data.address.slice(0, 40) + "..." : data.address}
+                    {data.address}
                     </h4>
                    </div>
                 <div className="flex pt-3">
