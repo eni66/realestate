@@ -162,14 +162,23 @@ const ProductDetails = ({ data }) => {
                     {data.address}
                     </h4>
                    </div>
-                <div className="flex pt-3">
+                {/* <div className="flex pt-3">
                   <h4 className={`${styles.productDiscountPrice}`}>
                     €{data.discountPrice}/month
                   </h4>
                   <h3 className={`${styles.price}`}>
                     €{data.originalPrice ? data.originalPrice + " " : null}
                   </h3>
-                </div>
+                </div> */}
+
+                <div className="flex">
+                  <h5 className="font-[500] text-[18px] text-[#d55b45] pr-3 line-through">
+                  €{data.originalPrice}
+                 </h5>
+                 <h5 className="font-bold text-[20px] text-[#333] font-Roboto">
+                  €{data.discountPrice}/month
+                 </h5>
+               </div>
 
                 <div className="flex items-center mt-12 justify-between pr-3">
                   {/* <div>
