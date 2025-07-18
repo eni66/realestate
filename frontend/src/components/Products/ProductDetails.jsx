@@ -278,7 +278,7 @@ const ProductDetailsInfo = ({
   scrolling="no"
   marginHeight="0"
   marginWidth="0"
-  src={`https://maps.google.com/maps?q=${encodeURIComponent(data?.shop?.address)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
+  src={`https://maps.google.com/maps?q=${encodeURIComponent(data?.address)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
 >
 </iframe>
 
