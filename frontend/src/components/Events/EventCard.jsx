@@ -68,7 +68,7 @@ const EventCard = ({ active, data }) => {
               €{data.originalPrice}
             </h5>
             <h5 className="font-bold text-[20px] text-[#333] font-Roboto">
-              €{data.discountPrice}
+              €{data.discountPrice}/month
             </h5>
           </div>
         {/* <span className="pr-3 font-[400] text-[17px] text-[#44a55e]">
