@@ -96,21 +96,16 @@ router.delete(
         return next(new ErrorHandler("Product is not found with this id", 404));
       }    
 
-      {/* for (let i = 0; 1 < product.images.length; i++) {
+      for (let i = 0; 1 < product.images.length; i++) {
         const result = await cloudinary.v2.uploader.destroy(
           event.images[i].public_id
         );
       }
     
       await event.remove();
-      */}
       
-      const imageId = event.images[0].public_id;
-
-      await cloudinary.v2.uploader.destroy(imageId);
-
-      await Event.findByIdAndDelete(req.params.id);
-
+      
+  
       res.status(201).json({
         success: true,
         message: "Event Deleted successfully!",
