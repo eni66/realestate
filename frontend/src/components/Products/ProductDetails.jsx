@@ -281,7 +281,7 @@ const ProductDetailsInfo = ({
 
   return (
     <div className="bg-[#f5f6fb] px-3 800px:px-10 py-2 rounded">
-      {/* <iframe
+  <iframe
   className="gmap_iframe"
   width="100%"
   frameBorder="0"
@@ -290,7 +290,7 @@ const ProductDetailsInfo = ({
   marginWidth="0"
   src={`https://maps.google.com/maps?q=${encodeURIComponent(data?.address)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
 >
-</iframe> */}
+</iframe>
 
       {/* <div className="w-full flex justify-between border-b pt-10 pb-2">
         <div className="relative">
