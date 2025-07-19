@@ -63,7 +63,9 @@ const ShopInfo = ({ isOwner }) => {
         <p className="text-[16px] text-[#000000a6] p-[10px] flex items-center">
           {data.description}
         </p>
-        <Ratings rating={data?.ratings} />
+        <div className="flex item-center justify-center">
+          <Ratings rating={data?.ratings} />
+         </div>
       </div>
       <div className="p-3">
         <h5 className="font-[600]">Total Properties</h5>
