@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { server } from "../../server";
 import styles from "../../styles/styles";
+import Ratings from "../Products/Ratings";
 import Loader from "../Layout/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProductsShop } from "../../redux/actions/product";
@@ -62,6 +63,7 @@ const ShopInfo = ({ isOwner }) => {
         <p className="text-[16px] text-[#000000a6] p-[10px] flex items-center">
           {data.description}
         </p>
+        <Ratings rating={data?.ratings} />
       </div>
       <div className="p-3">
         <h5 className="font-[600]">Total Properties</h5>
