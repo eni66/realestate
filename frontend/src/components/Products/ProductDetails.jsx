@@ -280,7 +280,7 @@ const ProductDetailsInfo = ({
   const [active, setActive] = useState(1);
 
   return (
-    <div className="bg-[#f5f6fb] px-3 800px:px-10 py-2 rounded">
+    <div className="800px:px-10 rounded">
   <iframe
   className="gmap_iframe"
   width="100%"
