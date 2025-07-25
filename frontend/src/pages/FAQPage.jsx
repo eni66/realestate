@@ -33,9 +33,9 @@ const Faq = () => {
            <span className="text-lg font-medium text-gray-900">
               Send us a mail
            </span>
-           <div className="mt-4">
+           <div className="mt-2">
               <p className="text-base text-gray-500">
-                support@outlook.com
+                support@roomvella.com
               </p>
             </div>
 
