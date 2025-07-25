@@ -26,9 +26,18 @@ const Faq = () => {
 
   return (
     <div className={`${styles.section} my-8`}>
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Let's Talk!</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">For inquiries</h2>
+     
       <div className="mx-auto space-y-4">
         {/* single Faq */}
+           <span className="text-lg font-medium text-gray-900">
+              Send us a mail
+           </span>
+           <div className="mt-4">
+              <p className="text-base text-gray-500">
+                support@outlook.com
+              </p>
+            </div>
 
         <div className="border-b border-gray-200 pb-4">
           <button
