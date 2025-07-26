@@ -47,7 +47,7 @@ const Pagination = ({ productsPerPage, totalProducts, paginate, currentPage }) =
 const FeaturedProduct = () => {
 
   // State for pagination
-  const [products, setProducts] = useState([]);
+  {/*    const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalProducts, setTotalProducts] = useState(0);
@@ -105,10 +105,10 @@ const FeaturedProduct = () => {
     </div>
   );
 
-
+*/}
 
   
-  {/*  const {allProducts} = useSelector((state) => state.products);
+const {allProducts} = useSelector((state) => state.products);
    
   return (
     <div>
@@ -127,7 +127,7 @@ const FeaturedProduct = () => {
         </div>
       </div>
     </div>
-  ); */}
+  );
 };
 
 export default FeaturedProduct;
