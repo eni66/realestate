@@ -115,7 +115,7 @@ router.delete(
 );
 
 // get all products
-router.get(
+{/*router.get(
   "/get-all-products",
   catchAsyncErrors(async (req, res, next) => {
     try {
@@ -124,6 +124,38 @@ router.get(
       res.status(201).json({
         success: true,
         products,
+      });
+    } catch (error) {
+      return next(new ErrorHandler(error, 400));
+    }
+  })
+);
+*/}
+
+// get all products with pagination
+router.get(
+  "/get-all-products",
+  catchAsyncErrors(async (req, res, next) => {
+    try {
+      // 1. Get page and limit from query, with default values
+      const page = parseInt(req.query.page, 10) || 1;
+      const limit = parseInt(req.query.limit, 10) || 10; // Default to 10 products per page
+      const skip = (page - 1) * limit;
+
+      // 2. Fetch the paginated products
+      const products = await Product.find()
+        .sort({ createdAt: -1 })
+        .limit(limit)
+        .skip(skip);
+
+      // 3. Get the total count of all products for pagination calculation
+      const totalProducts = await Product.countDocuments();
+
+      // 4. Send products and total count in the response
+      res.status(200).json({ // Changed to 200 for GET request
+        success: true,
+        products,
+        totalProducts,
       });
     } catch (error) {
       return next(new ErrorHandler(error, 400));
