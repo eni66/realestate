@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from "react";
-import styles from "../../styles/pagination-styles";
 
 // You can place this Pagination component in the same file or import it from another file.
 const Pagination = ({ productsPerPage, totalProducts, paginate, currentPage }) => {
