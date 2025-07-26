@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import styles from "../../../styles/styles";
 import ProductCard from "../ProductCard/ProductCard";
-import Pagination from "../Pagination";
+import Pagination from "./Pagination";
 
 const FeaturedProduct = () => {
 
