@@ -47,7 +47,7 @@ const Pagination = ({ productsPerPage, totalProducts, paginate, currentPage }) =
 const FeaturedProduct = () => {
 
   // State for pagination
-  {/*    const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalProducts, setTotalProducts] = useState(0);
@@ -59,7 +59,7 @@ const FeaturedProduct = () => {
       try {
         // Use your actual API endpoint
         const res = await fetch(
-          `/api/v2/products/get-all-products?page=${currentPage}&limit=${productsPerPage}`
+          `/api/v2/product/get-all-products?page=${currentPage}&limit=${productsPerPage}`
         );
         const data = await res.json();
 
@@ -105,8 +105,8 @@ const FeaturedProduct = () => {
     </div>
   );
 
-*/}
 
+  {/*
   
 const {allProducts} = useSelector((state) => state.products);
    
@@ -114,7 +114,7 @@ const {allProducts} = useSelector((state) => state.products);
     <div>
       <div className={`${styles.section}`}>
         <div className={`${styles.heading}`}>
-          {/* <h1>Featured Products</h1> */}
+          <h1>Featured Products</h1>
         </div>
         <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 md:gap-[25px] lg:grid-cols-4 lg:gap-[25px] xl:grid-cols-5 xl:gap-[30px] mb-12 border-0">
         {
@@ -127,7 +127,7 @@ const {allProducts} = useSelector((state) => state.products);
         </div>
       </div>
     </div>
-  );
+  ); */}
 };
 
 export default FeaturedProduct;
