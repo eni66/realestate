@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import styles from "../../../styles/styles";
 import ProductCard from "../ProductCard/ProductCard";
+import { server } from "../../../server";
 //import Pagination from "../Pagination";
 
 // You can place this Pagination component in the same file or import it from another file.
@@ -46,20 +47,22 @@ const Pagination = ({ productsPerPage, totalProducts, paginate, currentPage }) =
 
 const FeaturedProduct = () => {
 
-  // State for pagination
-  const [products, setProducts] = useState([]);
+ const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalProducts, setTotalProducts] = useState(0);
-  const [productsPerPage] = useState(10); // Set how many products you want per page
+  const [productsPerPage] = useState(10);
+
+  // A good practice for deployment is to use the full backend URL
+  //const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:8000";
 
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        // Use your actual API endpoint
+        // Use the full URL for robustness in deployment
         const res = await fetch(
-          `/api/v2/product/get-all-products?page=${currentPage}&limit=${productsPerPage}`
+          `${server}/product/get-all-products?page=${currentPage}&limit=${productsPerPage}`
         );
         const data = await res.json();
 
@@ -74,7 +77,7 @@ const FeaturedProduct = () => {
     };
 
     fetchProducts();
-  }, [currentPage, productsPerPage]); // Re-fetch when currentPage changes
+  }, [currentPage, productsPerPage, backendUrl]); // Added backendUrl to dependencies
 
   return (
     <div>
