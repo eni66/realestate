@@ -62,7 +62,7 @@ const FeaturedProduct = () => {
       try {
         // Use the full URL for robustness in deployment
         const res = await fetch(
-          `${server}/get-all-products?page=${currentPage}&limit=${productsPerPage}`
+          `${server}/properties/get-all-products?page=${currentPage}&limit=${productsPerPage}`
         );
         const data = await res.json();
 
