@@ -115,7 +115,7 @@ router.delete(
 );
 
 // get all products
-{/*router.get(
+router.get(
   "/get-all-products",
   catchAsyncErrors(async (req, res, next) => {
     try {
@@ -130,10 +130,9 @@ router.delete(
     }
   })
 );
-*/}
 
 // get all products with pagination
-router.get(
+{/*router.get(
   "/get-all-products",
   catchAsyncErrors(async (req, res, next) => {
     try {
@@ -161,7 +160,7 @@ router.get(
       return next(new ErrorHandler(error, 400));
     }
   })
-);
+);*/}
 
 // review for a product
 router.put(
