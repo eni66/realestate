@@ -80,7 +80,7 @@ const FeaturedProduct = () => {
     <div>
       <div className={`${styles.section}`}>
         <div className={`${styles.heading}`}>
-          <h1>Featured Products</h1>
+          <h1>Featured Properties</h1>
         </div>
         {loading ? (
           <p className="text-center">Loading...</p>
