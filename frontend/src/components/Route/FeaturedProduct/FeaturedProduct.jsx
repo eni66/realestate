@@ -53,16 +53,13 @@ const FeaturedProduct = () => {
   const [totalProducts, setTotalProducts] = useState(0);
   const [productsPerPage] = useState(10);
 
-  // A good practice for deployment is to use the full backend URL
-  //const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:8000";
-
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        // Use the full URL for robustness in deployment
+        // Updated fetch request to use your 'server' variable
         const res = await fetch(
-          `${server}/properties/get-all-products?page=${currentPage}&limit=${productsPerPage}`
+          `${server}/product/get-all-products?page=${currentPage}&limit=${productsPerPage}`
         );
         const data = await res.json();
 
@@ -77,7 +74,7 @@ const FeaturedProduct = () => {
     };
 
     fetchProducts();
-  }, [currentPage, productsPerPage, backendUrl]); // Added backendUrl to dependencies
+  }, [currentPage, productsPerPage]); // Dependency array is now correct
 
   return (
     <div>
@@ -107,7 +104,6 @@ const FeaturedProduct = () => {
       </div>
     </div>
   );
-
 
   {/*
   
