@@ -3,11 +3,11 @@ import { useSelector } from "react-redux";
 import styles from "../../../styles/styles";
 import ProductCard from "../ProductCard/ProductCard";
 import { server } from "../../../server";
-import Pagination from "../Pagination";
+//import Pagination from "../Pagination";
 
 const FeaturedProduct = () => {
 
- const [products, setProducts] = useState([]);
+ {/* const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalProducts, setTotalProducts] = useState(0);
@@ -65,7 +65,7 @@ const FeaturedProduct = () => {
     </div>
   );
 
-  {/*
+  */}
   
 const {allProducts} = useSelector((state) => state.products);
    
@@ -86,7 +86,7 @@ const {allProducts} = useSelector((state) => state.products);
         </div>
       </div>
     </div>
-  ); */}
+  );
 };
 
 export default FeaturedProduct;
